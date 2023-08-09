@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins, sans-serif';
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+.card{
+    width: 90%;
+    max-width: 800px;
+    background: linear-gradient(10deg, #00feba,#5b548a) ;
+    color: #fff;
+    margin: 100px auto 0;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 10px;
+
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: none;
+    outline: 0;
+    background: #ebfffc;
+    padding: 10px 20px;
+    height: 30px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 3px;
+    font-size: 18px;
+}
+
+.search button{
+    border: none;
+    outline: 0;
+    background: #ebfffc; 
+    border-radius: 50%;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+
+}
+
+.search button img{
+    width: 30px;
+   
+}
+
+.weather-icon{
+    width: 160px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-right: 30px;
+
+}
+
+.col img{
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+ .wind, .humidity{
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+@media screen and (max-width: 320px) {
+    .card{
+        padding: 10px ;
+        
+        margin: auto;
+        
+      
+       
+    
+    }
+
+    .search input{
+        width: 20px;
+    }
+    
+}
